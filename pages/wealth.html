@@ -1,11 +1,45 @@
 {
   "template" : "story",
-  "title": "Page 4",
-  "description": "This is a starter template",
+  "title": "wealth story",
+  "description": "wealth description",
   "thumbnail": "assets/thumbnail.jpg",
   "infobox1": {
     "title": "BUILDING A DIVIDE",
     "text": "Years of housing discrimination helped limit African-Americans’ ability to own property and create wealth in Austin. The impact of those policies is still being felt today."
+  },
+  "photoClarksvillehistory": {
+    "url": "assets/rbz-Clarksville-History-05.jpg",
+    "caption": "Gentrification and the turnover of housing was one of the key trends in Austin's history of housing segregation. John Henneberger, one of the country's top low-income housing experts, spent years watching that transition around the city and particularly in Clarksville, where he lives and offices today. Henneberger walks the Clarksville neighborhood in front of the Hezikiah Haskell House at 1703 Waterson Avenue. Haskell, a Union soldier, Buffalo Soldier and member of the Black Cavalry, lived on the premises which is now a historical marker.",
+    "credit": "RALPH BARRERA/ AMERICAN-STATESMAN"
+  },
+  "video1": {
+    "playerID": "2305729465001",
+    "playerKey": "AQ~~,AAAAAFSNjfU~,4oPitrNpKqxve-TuA7jvGHefnd3bNl1A",
+    "videoPlayer": "3595824850001"
+  },
+  "quoteHolme1": {
+    "text": "Instead of saying you can’t live there, they segregated services — ‘You can choose to live there, but you’re not going to get access to city utilities and services.’",
+    "attribution": "Jennifer Jellison Holme",
+    "url": "assets/Jellison_Holme_Jennifer.jpg"
+  },
+  "sliderVonnye": {
+    "images": [{
+      "url": "assets/klw-mobility-vonnye02.jpg",
+      "caption": "Vonnye Rice-Gardner's parents didn't have many options when they wanted to buy their first house. It was the early 1930s, and just a few years earlier the Austin city council demarcated a new \"negro district\" in the eastern part of the city. If Friendly and Johnnie Mae Yates-Rice wanted access to public schools and other city services, they had but one neighborhood to choose from. Rice-Gardner still lives in the house they bought near the corner of East 7th and Comal streets, though the east Austin neighborhood has seen major transition in her lifetime, and the value of her property is now exponentially higher than the $1200 her parents paid for it. \"As far as being able to stay in our homes, it's almost getting impossible...because taxes are going higher and higher,\" said Rice-Gardner, seen posing by her front door.",
+      "credit": "KELLY WEST / AMERICAN-STATESMAN"
+    }, {
+      "url": "assets/klw-mobility-vonnye05.jpg",
+      "caption": "Vonnye Rice-Gardner's parents didn't have many options when they wanted to buy their first house. It was the early 1930s, and just a few years earlier the Austin city council demarcated a new \"negro district\" in the eastern part of the city. If Friendly and Johnnie Mae Yates-Rice wanted access to public schools and other city services, they had but one neighborhood to choose from. Rice-Gardner still lives in the house they bought near the corner of East 7th and Comal streets, though the east Austin neighborhood has seen major transition in her lifetime, and the value of her property is now exponentially higher than the $1200 her parents paid for it. \"As far as being able to stay in our homes, it's almost getting impossible...because taxes are going higher and higher,\" said Rice-Gardner. Rice-Gardner works in her office in her house.",
+      "credit": "KELLY WEST / AMERICAN-STATESMAN"
+    }, {
+      "url": "assets/klw-mobility-vonnye03.jpg",
+      "caption": "Vonnye Rice-Gardner's parents didn't have many options when they wanted to buy their first house. It was the early 1930s, and just a few years earlier the Austin city council demarcated a new \"negro district\" in the eastern part of the city. If Friendly and Johnnie Mae Yates-Rice wanted access to public schools and other city services, they had but one neighborhood to choose from. Rice-Gardner still lives in the house they bought near the corner of East 7th and Comal streets, though the east Austin neighborhood has seen major transition in her lifetime, and the value of her property is now exponentially higher than the $1200 her parents paid for it. \"As far as being able to stay in our homes, it's almost getting impossible...because taxes are going higher and higher,\" said Rice-Gardner. Rice-Gardner kneels to pray in a pew at Holy Cross Catholic Church, the church up the street from her house where she has been a parishioner for over 20 years.",
+      "credit": "KELLY WEST / AMERICAN-STATESMAN"
+    }, {
+      "url": "assets/RBB-atxmobility-1.jpg",
+      "caption": "Vonnye Rice-Gardner's parents didn't have many options when they wanted to buy their first house. It was the early 1930s, and just a few years earlier the Austin city council demarcated a new \"negro district\" in the eastern part of the city. If Friendly and Johnnie Mae Yates-Rice wanted access to public schools and other city services, they had but one neighborhood to choose from. Rice-Gardner still lives in the house they bought near the corner of East 7th and Comal streets, though the east Austin neighborhood has seen major transition in her lifetime, and the value of her property is now exponentially higher than the $1200 her parents paid for it. \"As far as being able to stay in our homes, it's almost getting impossible...because taxes are going higher and higher,\" said Rice-Gardner. Rice-Gardner kneels to pray in a pew at Holy Cross Catholic Church, the church up the street from her house where she has been a parishioner for over 20 years.",
+      "credit": "RICARDO B. BRAzzIELL / AMERICAN-STATESMAN"
+    }]
   }
 }
 ---
@@ -14,10 +48,14 @@
   <div class="row">
     <article id="main">
 
-      {{#markdown}}
+      {{> video-block-brightcove page.video1}}
 
-      # Main headlines
-      ## Subheadline
+      <h1>Main headlines</h1>
+      <h2>Subheadline</h2>
+
+      <p class="author">By Dan Zehr / Published January 4, 2015</p>
+
+      {{#markdown}}
 
       Vonnye Rice-Gardner’s parents didn’t have many options when they wanted to buy their first house.
 
@@ -56,6 +94,8 @@
       As thousands of freed slaves migrated toward cities in the post-Civil War years, Austin came to be known as safe haven for freed slaves, a more-tolerant city with less of the racial violence that would burn throughout the South for the better part of the next century.
 
       Private restrictions and municipal zoning policies still limited where this influx of black residents could settle — confining them primarily to Clarksville, Wheatville [sic] and other neighborhoods — but those pockets were dispersed throughout the city limits. In fact, a series of Austin demographic maps suggests a more racially interspersed population in 1880 and 1910 than in any time since.
+
+      {{> blockquote page.quoteHolme1}}
 
       During those years, though, city leaders and developers set about consolidating the city’s black population and formalizing segregation, led in part by Monroe Shipe, a colonel who moved to Austin from Kansas and helped develop Hyde Park.
 
@@ -122,6 +162,8 @@
 
       “That’s daddy,” she tells a visitor, “at the top.”
 
+      {{> slider page.sliderVonnye}}
+
       ###A divided status quo
 
       Seated in the cultural center, Rice-Gardner unrolled a poster-size chart of all the homeowners along her local stretch of East Seventh Street. As she scrolled through the poster, going through the decades from 1920 through today, the lines unveiled the ownership history for each property.
@@ -163,6 +205,8 @@
       Yet even more benign and mundane public policy help sustain the wealth and housing gaps. Austin’s current zoning regulations prohibit many types of development that promote greater affordability, said Tretter, the UT lecturer, and private land-use plans for most newer developments are filled with restrictions that inhibit integration.
 
       “The people who are going to be displaced are those who are living in areas where there’s no private restrictions protecting them,” Tretter said. “That’s going to lead to more income segregation.”
+
+      {{> photo-block page.photoClarksvillehistory}}
 
       ### An Inertia Never Arrested
 

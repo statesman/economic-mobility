@@ -1,7 +1,13 @@
 # economic-mobility
 
 Dan Zehr's economic mobility package basedoff Andrew Chavez's immersive-template, as explained below.
- 
+
+## Photo sizes
+
+* Full-width: 1170px
+* Text-width: 700px
+* Slider gallery: 700px
+* Sider panel: 300px
 
 # immersive-template
 
