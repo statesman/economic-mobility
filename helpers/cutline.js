@@ -10,7 +10,7 @@ var Handlebars = require('handlebars');
  */
 module.exports = function(caption, credit) {
   var wrapCredit = function(credit) {
-    return '<em class="pull-right">' + credit + '</em>';
+    return '<em class="pull-right credit">' + credit + '</em>';
   };
 
   if(caption && credit) {
