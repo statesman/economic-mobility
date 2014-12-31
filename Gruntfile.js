@@ -134,19 +134,24 @@ module.exports = function(grunt) {
               file: "index"
             },
             {
-              title: "Wealth story",
+              title: "Building a divide",
               subtitle: "Wealth subtitle",
               file: "wealth"
             },
             {
-              title: "Building a divide",
+              title: "A separated city",
               subtitle: "Divide subtitle",
               file: "divide"
             },
             {
-              title: "Latino story",
+              title: "A different divide",
               subtitle: "Latino subtitle",
               file: "latino"
+            },
+            {
+              title: "Mapping the divide",
+              subtitle: "Interactive",
+              file: "history"
             }
           ]
         }

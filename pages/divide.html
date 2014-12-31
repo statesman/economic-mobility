@@ -6,16 +6,47 @@
   "infobox1": {
     "title": "A SEPARATED CITY",
     "text": "As Austin grows, it’s becoming more economically divided. The city’s African-American population is actually declining, and minorities face higher poverty rates and more-isolated neighborhoods than their white counterparts. If that doesn’t change, it could cost billions to the area’s economy - and allow poverty to continue its generational spread."
+  },
+  "photoCofield": {
+    "url": "assets/RBB-black-tech.jpg",
+    "caption": "President & Chief Executive Officer of the Capital City African American Chamber of Commerce Natalie Madeira Cofield poses with Lola Bakare, left after the Unveiling of the cover for the Black Enterprise Magazine on Saturday, March 9, 2013 at the African American Cultural and Heritage Facility. The Capital City African American Chamber of Commerce raises Austin's profile for black techies during SXSW with an unveiling of a cover story on Austin's black professionals in Black Enterprise magazine.",
+    "credit": "RICARDO B. BRAzzIELL/AMERICAN-STATESMAN"
+  },
+  "photoCobbs": {
+    "url": "assets/rgz-atx-mobility-02.jpg",
+    "caption": "Cynthia Cobbs, stylist and manager, visits with long time regular client, Deborah Hines during a visit to the HCS Salon and Spa in Austin, Texas, on Thursday, December 18, 2014.",
+    "credit": "RODOLFO GONZALEZ / AMERICAN-STATESMAN"
+  },
+  "photoSmith": {
+    "url": "assets/JLR-Mobility-Divide-03.jpg",
+    "caption": "China Smith, founder and artistic director of Ballet Afrique, talks with students about ballet technique during a class for 7-12 year olds at her studio in Highland Mall on December 16, 2014.",
+    "credit": "JULIA ROBINSON/ FOR AMERICAN-STATESMAN"
+  },
+  "photoRosewood": {
+    "url": "assets/klw-rosewood--1.jpg",
+    "caption": "Matthew Jones, 6, watches television in the living room of the two-bedroom apartment where he lives with his mother, Shannon Jones, at Rosewood Courts in East Austin on Wednesday, December 17, 2014. Rosewood Courts was built 75-years ago as the first public housing project for African-Americans in the country. The cinder block construction has created some logistical problems for upgrading the property, but some in the community are fighting to keep the buildings intact because of their historical significance",
+    "credit": "KELLY WEST/ AMERICAN-STATESMAN"
+  },
+  "videoRosewood": {
+    "playerID": "2305729465001",
+    "playerKey": "AQ~~,AAAAAFSNjfU~,4oPitrNpKqxve-TuA7jvGHefnd3bNl1A",
+    "videoPlayer": "3965640902001"
   }
 }
 ---
+
 
 
 <div class="container">
   <div class="row">
     <article id="main">
 
-    {{#markdown}}
+      {{> video-block-brightcove page.videoRosewood}}
+      <br>
+      <br>
+      {{> photo-block page.photoCofield}}
+
+      {{#markdown}}
 
       # Headline needed here
 
@@ -51,6 +82,8 @@
       The loss of historically black schools, business districts, neighborhoods and other institutions has helped diminish the bonds between Austin’s Anglo majority and its African-American minority. But it also weakened the links between the area’s existing, often disadvantaged black residents, and the more-educated and more-affluent black professionals moving into the region.
 
       “Austin is quickly becoming a city of the privileged and the non-privileged,” said the Rev. Dr. Freddie Dixon, who for 22 years served as pastor at Wesley United Methodist Church, one of the city’s oldest historically black churches. “Is that the kind of Austin we want?”
+
+      {{> photo-block page.photoCobbs}}
 
       ###Bigger city, fewer minorities
 
@@ -123,6 +156,8 @@
 
       “For me, everything is so comfortable in my senior years,” she said. “I’m just holding fast to Rosewood.”
 
+      {{> photo-block page.photoRosewood}}
+
       ###Lost cultural identity
 
       The fight over Rosewood’s history and future reflects an irony of integration and development: The concentration within a segregated neighborhood can spark a powerful community spirit. But as civil rights advances started dismantling an official framework of segregation, the local energy and activity in East Austin started to seep out.
@@ -156,6 +191,8 @@
       Today, African-American students comprise 37.5 percent of the non-magnet student body, but just 1.1 percent of the magnet school’s enrollment, according to district data. Dixon calls the low number of black students in the magnet program “my greatest lament.”
 
       “Diversity is good, the transition and moving out,” he said, “but we’ve lost all semblances of cultural identity.”
+
+      {{> photo-block page.photoSmith}}
 
       ###‘I’m an ancestor’
 
