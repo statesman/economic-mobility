@@ -19,6 +19,7 @@
     "ScrollMagic": "~1.2.3",
     "Slides": "nathansearles/Slides#SlidesJS-3",
     "underscore": "~1.7.0",
-    "imagesloaded": "~3.1.8"
+    "imagesloaded": "~3.1.8",
+    "handlebars": "~2.0.0"
   }
 }
