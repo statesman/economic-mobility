@@ -1,4 +1,4 @@
-var ENV_STAGE = process.env.ENV_STAGE || 's:/projects/';
+var ENV_STAGE = process.env.ENV_STAGE || '//cmgdtcpxahost.cmg.int/aas_stage/projects/news/economic-mobility';
 
 module.exports = function(grunt) {
   'use strict';
@@ -162,10 +162,10 @@ module.exports = function(grunt) {
           src: [
           '**'
           ],
-          dest: ENV_STAGE + 'projects/test',
+          dest: ENV_STAGE,
         }],
         ignoreInDest: '.htaccess',
-        pretend: true,
+        pretend: false,
         verbose: true,
         updateAndDelete: true
       }
