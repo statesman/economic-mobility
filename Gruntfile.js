@@ -129,8 +129,8 @@ module.exports = function(grunt) {
           base: 'http://projects.statesman.com/templates/immersive/',
           nav: [
             {
-              title: "Index",
-              subtitle: "Overview",
+              title: "Overview",
+              subtitle: "Index subtitle",
               file: "index"
             },
             {
@@ -147,11 +147,6 @@ module.exports = function(grunt) {
               title: "A different divide",
               subtitle: "Latino subtitle",
               file: "latino"
-            },
-            {
-              title: "Mapping the divide",
-              subtitle: "Interactive",
-              file: "history"
             }
           ]
         }
