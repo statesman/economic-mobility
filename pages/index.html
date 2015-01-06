@@ -33,6 +33,17 @@
     "url": "assets/east-avenue.jpg",
     "caption": "This is a view of East Avenue, looking north from the top of Brackenridge Hospital in the 1960s. For decades, the road that became Interstate 35 in 1962, became a de facto boundary that isolated Austin's African-American residents to the east.",
     "credit": "Source: Texas Dept. of Transportation"
+  },
+  "slider1880s": {
+    "images": [{
+      "url": "assets/map-1880.jpg",
+      "caption": "1880 ... Blue for African-Americans households and red for Hispanics households.",
+      "credit": "Photographer / Statesman"
+    }, {
+      "url": "assets/map-1910.jpg",
+      "caption": "1910 ... Blue for African-Americans households and red for Hispanics households.",
+      "credit": "Photographer / Statesman"
+    }]
   }
 }
 ---
@@ -60,19 +71,24 @@
       {{> indextease page.indexteaseLatino}}
           </div>
         </div>
+      </div>
 
-        <div class="row">
+
       {{> photo-full page.eastave}}   
+
+      <div class="container">
+        <div class="row">
           <div class="col-lg-12">
             <h2>History of Austin's racial divide in maps</h2>
           </div>
-          <div class="col-lg-8 col-md-8">
-            <h4>1800s-1900s</h4>
+          <div class="col-lg-7 col-md-7">
+            <h3><span class="label">1800s-1900s</span></h3>
             <h3>Blacks, Hispanics spread across city</h3>
             <p>In the late 1800s and the early 1900s, African-Americans and Hispanics lived in pockets dispersed throughout the city.</p>
+            {{> slider page.slider1880s}}
           </div>
-          <div class="col-lg-4 col-md-4">
-            <h4>1917</h4>
+          <div class="col-lg-5 col-md-5">
+            <h3><span class="label">1917</span></h3>
             <div class="photo-block">
               <img src="assets/scotus.jpg" class="img-responsive">
               <p class="caption clearfix"><em class="pull-right credit">Rick McKay</em></p>
@@ -82,8 +98,19 @@
             <p>In its ruling, the court struck down segregationist zoning laws, so cities across the South started developing new policies to isolate minorities.</p>
           </div>
         </div>
-
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <h3><span class="label">1917</span></h3>
+            <h3>Evolution of a 'Negro District'</h3>            
+            <p>In Austin, the strategy to isolate minorities took the form of the Koch and Fowler city plan, which in 1928 proposed the creation of a “Negro District” -- making it the only part of the city where African-Americans could access schools and other public services.</p>
+            <p>Koch and Fowler also proposed that the district have the city’s weakest zoning restrictions, allowing the development of “a number of slightly objectionable industrial uses” -- essentially, any use that wasn’t specifically outlawed.</p>
+          </div>
+          <div class="col-lg-8 col-md-8">
+            
+          </div>
+        </div>
       </div>
+
     </article>
   </div>
 </div>
