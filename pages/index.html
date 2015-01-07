@@ -36,13 +36,36 @@
   },
   "slider1880s": {
     "images": [{
-      "url": "assets/map-1880.jpg",
-      "caption": "1880 ... Blue for African-Americans households and red for Hispanics households.",
-      "credit": "Photographer / Statesman"
+      "url": "assets/map-1880.jpg"
     }, {
-      "url": "assets/map-1910.jpg",
-      "caption": "1910 ... Blue for African-Americans households and red for Hispanics households.",
-      "credit": "Photographer / Statesman"
+      "url": "assets/map-1910.jpg"
+    }]
+  },
+  "slider1940Now": {
+    "images": [{
+      "url": "assets/race-id-1940.jpg",
+      "headline": "1940"
+    }, {
+      "url": "assets/race-id-1950.jpg",
+      "headline": "1950"
+    }, {
+      "url": "assets/race-id-1960.jpg",
+      "headline": "1960"
+    }, {
+      "url": "assets/race-id-1970.jpg",
+      "headline": "1970"
+    }, {
+      "url": "assets/race-id-1980.jpg",
+      "headline": "1980"
+    }, {
+      "url": "assets/race-id-1990.jpg",
+      "headline": "1990"
+    }, {
+      "url": "assets/race-id-2000.jpg",
+      "headline": "2000"
+    }, {
+      "url": "assets/race-id-2010.jpg",
+      "headline": "2010"
     }]
   }
 }
@@ -84,7 +107,8 @@
           <div class="col-lg-7 col-md-7">
             <h3><span class="label">1800s-1900s</span></h3>
             <h3>Blacks, Hispanics spread across city</h3>
-            <p>In the late 1800s and the early 1900s, African-Americans and Hispanics lived in pockets dispersed throughout the city.</p>
+            <p>In the late 1800s and the early 1900s, African-Americans and Hispanics lived in pockets dispersed throughout the city, as shown through historic data overlayed on a current map below.</p>
+            <p><span id="blueBox">█</span> African-American households. <span id="redBox">█</span> Hispanic households.</p>
             {{> slider page.slider1880s}}
           </div>
           <div class="col-lg-5 col-md-5">
@@ -98,24 +122,68 @@
             <p>In its ruling, the court struck down segregationist zoning laws, so cities across the South started developing new policies to isolate minorities.</p>
           </div>
         </div>
+        <hr>
         <div class="row">
-          <div class="col-lg-4 col-md-4">
-            <h3><span class="label">1917</span></h3>
+          <div class="col-lg-5 col-md-5">
+            <h3><span class="label">1928</span></h3>
             <h3>Evolution of a 'Negro District'</h3>            
-            <p>In Austin, the strategy to isolate minorities took the form of the Koch and Fowler city plan, which in 1928 proposed the creation of a “Negro District” -- making it the only part of the city where African-Americans could access schools and other public services.</p>
-            <p>Koch and Fowler also proposed that the district have the city’s weakest zoning restrictions, allowing the development of “a number of slightly objectionable industrial uses” -- essentially, any use that wasn’t specifically outlawed.</p>
+            <p>In Austin, the strategy to isolate minorities took the form of the Koch and Fowler city plan, which in 1928 proposed the creation of a “Negro District” &mdash; making it the only part of the city where African-Americans could access schools and other public services.</p>
+            <p>Koch and Fowler also proposed that the district have the city’s weakest zoning restrictions, allowing the development of “a number of slightly objectionable industrial uses” &mdash; essentially, any use that wasn’t specifically outlawed.</p>
+            <h4>Use the slider to view the residential areas with race covenants overlaid on the property use map drafted by urban consultants Koch and Fowler in 1927.</h4>
+            <p><span id="yellowBox">█</span> Areas with race restrictions<br><span id="purpleBox">█</span> Non-white residential areas<br><span id="redBox">▬</span> East Avenue</p>
           </div>
-          <div class="col-lg-8 col-md-8">
+          <div class="col-lg-7 col-md-7">
             <div id="thenAndNow">            
               <div><img src="assets/koch-property-1927-overlay.jpg" alt="slide 1" /></div>
               <div><img src="assets/koch-property-misc-1927.jpg" alt="slide 2" /></div>
             </div>
             <p class="sourceCredit text-right">Source: Koch and Fowler</p> 
-
           </div>
         </div>
-      </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <h3><span class="label">1935</span></h3>
+            <h3>Federal policy formalizes boundaries</h3>            
+            <p>Less than a decade later, in 1935, the federal government launched a New Deal program that would reinforce segregationist boundaries in Austin and throughout the country. The program, designed to restore household wealth during the Great Depression, used redlining &mdash; the practice of denying goods or services to racially determined neighborhoods &mdash; to specifically exclude minority populations.</p>
+            <p>Government-backed mortgages wouldn’t be offered in redlined districts, which were overwhelmingly populated by African-American and, to a lesser extent Hispanic, residents. In Austin, the largest redlined section encompassed Koch and Fowler’s black district.</p>
+            <p>The Home Owners Loan Corporation would not provide mortgages for those districts, barring minorities from one of the country’s most significant efforts to build household wealth.</p>
+            <h4>Use the slider to see how the HOLC-designated "hazardous" areas &mdash; in which no federally backed mortgages were offered &mdash; compare with areas with concentrations of black and Hispanic residents</h4>
+            <h5>Map of Austin, July 1934</h5>
+            <p><span id="orangeBox">█</span> Concentrations of blacks, Hispanics in 1934</p>
+            <h5>HOLC-designated areas in 1935</h5>
+            <p><span id="redBox">█</span> "Hazardous" areas<br>
+               <span id="blueDot">█</span> "Best" or "Desirable" areas<br>
+               <span id="yellowBox">█</span> "Definitely declining" areas</p>
 
+          </div>
+          <div class="col-lg-7 col-md-7">
+            <div id="thenAndNow2">
+              <div><img src="assets/holc-map-race-1935.jpg" alt="slide 1" /></div>
+              <div><img src="assets/holc-map-hazardous-1935.jpg" alt="slide 2" /></div>
+            </div>
+           <p class="sourceCredit text-right">Source: Home Owners Loan Corporation race map</p> 
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-5 col-md-5">
+            <h3><span class="label">1940-Present</span></h3>
+            <h3>Divided by I-35</h3>            
+              <p>While the influx of Hispanics into Texas and Austin during the second half of the 20th century led to a much greater dispersal of their population throughout the area, the largest concentrations remain in East Austin.</p>
+              <p>We can still see the effects of those segregationist policies today, both in the city and around the metro area. The vast majority of Austin’s African-American and Hispanic populations remain east of I-35.</p>
+              <p>But Austin’s divisions run deeper than where its residents live. The policies that spawned a geographic divide set the stage for a sharp economic divide as well.</p>
+              <p>Redlining not only barred minorities from the country’s single-largest accumulation of household wealth, it also denied them the compound interest that future generations could derive from such affluence.</p>
+              <p>Their exclusion from that wealth has calcified through an increasingly complex mix of social dynamics — subtle and unintentional forms of discrimination, disadvantaged schools, higher crime rates and passive public policies that maintain the status quo.</p>
+              <p>Together, these forces divided Austin in the past and keep it divided today. The metro area has one of the highest rates of income segregation in the country, a factor that could ultimately limit the ability of many Austin youth to climb the income ladder and bolster the region’s future prosperity.</p>
+          </div>
+          <div class="col-lg-7 col-md-7">
+              <p><span id="blueDot">█</span> White <span id="purpleBox">█</span> Black <span id="brownDot">█</span> Hispanic/Other (1980-90) <span id="redBox">▬</span> East Avenue/I-35</p>
+            {{> slider page.slider1940Now}}
+          </div>
+        </div>
+
+      </div>
     </article>
   </div>
 </div>
