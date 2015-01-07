@@ -65,6 +65,8 @@ module.exports = function(grunt) {
             'bower_components/underscore/underscore.js',
             'bower_components/imagesloaded/imagesloaded.pkgd.js',
             'bower_components/Slides/source/jquery.slides.js',
+            'bower_components/twentytwenty/js/jquery.twentytwenty.js',
+            'bower_components/twentytwenty/js/jquery.event.move.js',
             'src/js/slider.js',
             'src/js/main.js'
           ]
