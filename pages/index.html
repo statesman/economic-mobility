@@ -36,36 +36,28 @@
   },
   "slider1880s": {
     "images": [{
-      "url": "assets/map-1880.jpg"
+      "url": "assets/map-1880-t.jpg"
     }, {
-      "url": "assets/map-1910.jpg"
+      "url": "assets/map-1910-t.jpg"
     }]
   },
   "slider1940Now": {
     "images": [{
-      "url": "assets/race-id-1940.jpg",
-      "headline": "1940"
+      "url": "assets/race-id-1940-t.jpg"
     }, {
-      "url": "assets/race-id-1950.jpg",
-      "headline": "1950"
+      "url": "assets/race-id-1950-t.jpg"
     }, {
-      "url": "assets/race-id-1960.jpg",
-      "headline": "1960"
+      "url": "assets/race-id-1960-t.jpg"
     }, {
-      "url": "assets/race-id-1970.jpg",
-      "headline": "1970"
+      "url": "assets/race-id-1970-t.jpg"
     }, {
-      "url": "assets/race-id-1980.jpg",
-      "headline": "1980"
+      "url": "assets/race-id-1980-t.jpg"
     }, {
-      "url": "assets/race-id-1990.jpg",
-      "headline": "1990"
+      "url": "assets/race-id-1990-t.jpg"
     }, {
-      "url": "assets/race-id-2000.jpg",
-      "headline": "2000"
+      "url": "assets/race-id-2000-t.jpg"
     }, {
-      "url": "assets/race-id-2010.jpg",
-      "headline": "2010"
+      "url": "assets/race-id-2010-t.jpg"
     }]
   }
 }
@@ -102,10 +94,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h2>History of Austin's racial divide in maps</h2>
+            <h1>History of Austin's racial divide in maps</h1>
           </div>
           <div class="col-lg-7 col-md-7">
-            <h3><span class="label">1800s-1900s</span></h3>
+            <h3 class="graphiclabel"><span class="label">1800s-1900s</span></h3>
             <h3>Blacks, Hispanics spread across city</h3>
             <p>In the late 1800s and the early 1900s, African-Americans and Hispanics lived in pockets dispersed throughout the city, as shown through historic data overlayed on a current map below.</p>
             <p><span id="blueBox">█</span> African-American households. <span id="redBox">█</span> Hispanic households.</p>
@@ -134,8 +126,8 @@
           </div>
           <div class="col-lg-7 col-md-7">
             <div id="thenAndNow">            
-              <div><img src="assets/koch-property-1927-overlay.jpg" alt="slide 1" /></div>
-              <div><img src="assets/koch-property-misc-1927.jpg" alt="slide 2" /></div>
+              <div><img src="assets/koch-property-1927-overlay.jpg"  class="img-responsive" alt="slide 1" /></div>
+              <div><img src="assets/koch-property-misc-1927.jpg" class="img-responsive" alt="slide 2" /></div>
             </div>
             <p class="sourceCredit text-right">Source: Koch and Fowler</p> 
           </div>
@@ -159,8 +151,8 @@
           </div>
           <div class="col-lg-7 col-md-7">
             <div id="thenAndNow2">
-              <div><img src="assets/holc-map-race-1935.jpg" alt="slide 1" /></div>
-              <div><img src="assets/holc-map-hazardous-1935.jpg" alt="slide 2" /></div>
+              <div><img src="assets/holc-map-race-1935.jpg" class="img-responsive" alt="slide 1" /></div>
+              <div><img src="assets/holc-map-hazardous-1935.jpg" class="img-responsive" alt="slide 2" /></div>
             </div>
            <p class="sourceCredit text-right">Source: Home Owners Loan Corporation race map</p> 
           </div>
@@ -176,10 +168,16 @@
               <p>Redlining not only barred minorities from the country’s single-largest accumulation of household wealth, it also denied them the compound interest that future generations could derive from such affluence.</p>
               <p>Their exclusion from that wealth has calcified through an increasingly complex mix of social dynamics — subtle and unintentional forms of discrimination, disadvantaged schools, higher crime rates and passive public policies that maintain the status quo.</p>
               <p>Together, these forces divided Austin in the past and keep it divided today. The metro area has one of the highest rates of income segregation in the country, a factor that could ultimately limit the ability of many Austin youth to climb the income ladder and bolster the region’s future prosperity.</p>
+              <h4>This dot density map of racial identification is derived from census blocks. Some blocks include commercial or industrial zones and may appear uninhabited. Four census racial identifications are mapped: White, Black, Hispanic and Other, which at the time included Hispanics.</h4>
+              <p><span id="blueDot">█</span> White<br>
+                 <span id="purpleBox">█</span> Black<br>
+                 <span id="brownDot">█</span> Hispanic/Other (1980-90)<br>
+                 <span id="redBox">▬</span> East Avenue/I-35</p>
           </div>
           <div class="col-lg-7 col-md-7">
-              <p><span id="blueDot">█</span> White <span id="purpleBox">█</span> Black <span id="brownDot">█</span> Hispanic/Other (1980-90) <span id="redBox">▬</span> East Avenue/I-35</p>
-            {{> slider page.slider1940Now}}
+              {{> slider page.slider1940Now}}
+              <p class="credit text-right">Source: U.S.Census</p> 
+
           </div>
         </div>
 
