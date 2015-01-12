@@ -131,8 +131,7 @@
 
     <div class="photo-full">
       <div class="embed-responsive embed-responsive-16by9">
-        <div style="display:none">JANUS-1086 chromeless player template</div>
-    
+            <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
         <object id="myExperience3965640902001" class="BrightcoveExperience embed-responsive-item">
           <param name="bgcolor" value="#FFFFFF" />
           <param name="width" value="750" />
@@ -147,16 +146,9 @@
           <param name="templateLoadHandler" value="analytics.bcoveAddPlayer" />
           <param name="templateReadyHandler" value="analytics.bcovePlayerReady" />
         </object>
+        <script type="text/javascript">brightcove.createExperiences();</script>
       </div>
     </div>
-    
-    <script>
-      if (typeof window.brightcove === "undefined") {
-        var script = document.createElement('script');
-        script.src = "http://admin.brightcove.com/js/BrightcoveExperiences.js";
-        document.getElementsByTagName('head')[0].appendChild(script);
-      }
-    </script>
 
       <h1>Headline needed here that can go a long way</h1>
 
