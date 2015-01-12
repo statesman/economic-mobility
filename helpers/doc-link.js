@@ -6,6 +6,6 @@ var Handlebars = require('handlebars');
 * @doc: the document ID, with any URL extras #p18, #p18/ad8731, etc.
 */
 module.exports = function(doc, options) {
-  var link = '<a class="doc-link" target="_blank" href="docs.html?doc=' + doc + '">' + options.fn(this) + '</a>';
+  var link = '<a class="doc-link" target="_blank" href="http://projects.statesman.com/documents/?doc=' + doc + '">' + options.fn(this) + '</a>';
   return new Handlebars.SafeString(link);
 };
