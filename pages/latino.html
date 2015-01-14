@@ -6,13 +6,25 @@
 	"infobox1": {
   	"title": "A DIFFERENT DIVIDE",
   	"text": "_need a description here_"
-	}
+	},
+  "photoMobility": {
+    "url": "assets/rbz-east-austin-mobility-14.jpg",
+    "caption": "caption caption caption",
+    "credit": "Ralph Barrera / American-Statesman"
+  },
+  "hydepark": {
+    "url": "assets/hyde-park-375.jpg",
+    "caption": "caption caption caption",
+    "credit": "Austin Daily Statesman, circa 1915"
+  }
 }
 ---
 
 <div class="container">
   <div class="row">
     <article id="main" style="padding:1px;">
+
+  {{> photo-block page.photoMobility}} 
 
       <h1>Different divides from different sources</h1>
 
@@ -22,15 +34,18 @@
 
 {{#markdown}}
 
+
+  {{> infobox page.infobox1}}
+
   Austin’s history of public discrimination reflects many of the same patterns seen throughout the South and the rest of the country.
 
   However, the influx of Latino residents that gained momentum throughout the 20th century spawned alternative forms of discrimination throughout Texas.
 
   In Austin, it wasn’t always that way, according to a 1979 report for the city’s Human Relations Committee.
 
-  {{> infobox page.infobox1}}
-
   The report’s demographic breakdowns showed a small, extremely poor Hispanic population in 1880, with African-Americans in far greater numbers and more dispersed throughout the city limits.
+
+  {{> photo-right-vertical page.hydepark}} 
 
   It wasn’t until the early- to mid-1900s that Austin’s Hispanic population started to boom and rivaled the size of its black community. At the time, Mexican-American families started to concentrate in East Austin and to the south, often replacing low-income Anglo residents.
 
@@ -38,13 +53,13 @@
 
   To deal with this growing population, Texas and its cities developed a new, “tri-racial” form of segregation, said Eliot Tretter, a UT lecturer who chronicled Austin’s past and current divides in his report, “Austin Restricted.”
 
-  {{doc "1499065-austin-restricted-draft-final" "Austin Restricted: Progressivism, Zoning, Private Racial Covenants, and the Making of a Segregated City, by Eliot M. Tretter" "1"}}
-
   While state regulations and court rulings often classified Hispanic residents as white, Tretter said, a clear separation remained between Mexican immigrants and the state’s Anglo population.
 
   Tretter didn’t uncover any court cases that conclusively proved an official, public segregation of Hispanics. However, he said, as the Latino population in Austin started to boom, the language in many private covenants and deed restrictions shifted from “no people of African descent” to “Caucasian only.”
 
   The fact that such exclusionary language had become a standard practice in private deals only reinforced the growing divisions in Austin, Tretter said.
+
+  {{doc "1499065-austin-restricted-draft-final" "Austin Restricted: Progressivism, Zoning, Private Racial Covenants, and the Making of a Segregated City, by Eliot M. Tretter" "1"}}
 
   For example, the concerns that racial integration would lead to unstable communities not only shaped the criteria for government loans, they became a more-localized default for denying a private loans and purchases as well.
 
