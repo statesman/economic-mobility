@@ -131,22 +131,22 @@ module.exports = function(grunt) {
           nav: [
             {
               title: "Overview",
-              subtitle: "Index subtitle",
+              subtitle: "Inheriting inequality",
               file: "index"
             },
             {
-              title: "Building a divide",
-              subtitle: "Wealth subtitle",
-              file: "wealth"
-            },
-            {
               title: "A separated city",
-              subtitle: "Divide subtitle",
+              subtitle: "Racial rifts are costly",
               file: "divide"
             },
             {
-              title: "A different divide",
-              subtitle: "Latino subtitle",
+              title: "Building a divide",
+              subtitle: "Wealth disparity lives on",
+              file: "wealth"
+            },
+            {
+              title: "Further fracture",
+              subtitle: "Latinos also face gaps",
               file: "latino"
             }
           ]
