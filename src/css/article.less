@@ -48,7 +48,7 @@ article {
   > .photo-full {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: @line-height-computed * 2;
+    margin-bottom: @line-height-computed;
     width: 100%;
 
     img {
@@ -200,7 +200,6 @@ article {
   &#main {
     background: #fff;
     position: relative;
-    padding-top: @line-height-computed * 2;
     padding-bottom: @line-height-computed * 2;
     margin-bottom: @line-height-computed;
     .box-shadow(0 0 25px rgba(0,0,0,.05));
@@ -270,4 +269,8 @@ article {
       }
     }
   }
+}
+
+p:last-child {
+  padding-bottom: @line-height-computed;
 }

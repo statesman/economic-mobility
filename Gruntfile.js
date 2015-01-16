@@ -53,6 +53,30 @@ module.exports = function(grunt) {
       }
     },
 
+    // Pre-render Handlebars templates
+    handlebars: {
+      options: {
+        // Returns the filename, with its parent directory if
+        // it's in a subdirectory of the src/templates folder
+        processName: function(filePath) {
+          var path = filePath.toLowerCase(),
+              pieces = path.split("/"),
+              name = '';
+          if(pieces[pieces.length - 2] !== 'templates') {
+            name = name + pieces[pieces.length - 2];
+          }
+          name = name + pieces[pieces.length - 1];
+          return name.split(".")[0];
+        },
+        node: true
+      },
+      compile: {
+        files: {
+          'build/templates.js': ['src/templates/**/*.hbs']
+        }
+      }
+    },
+
     // Use Uglify to bundle up a pym file for the home page
     uglify: {
       options: {
@@ -127,7 +151,7 @@ module.exports = function(grunt) {
           templates: 'layouts',
           templateExt: 'hbs',
           helpers: require('./helpers'),
-          base: 'http://projects.statesman.com/templates/immersive/',
+          base: 'http://projects.statesman.com/news/economic-mobility/',
           nav: [
             {
               title: "Overview",
