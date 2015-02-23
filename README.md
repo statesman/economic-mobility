@@ -1,6 +1,15 @@
 # economic-mobility
 
-Dan Zehr's economic mobility package basedoff Andrew Chavez's immersive-template, as explained below.
+Dan Zehr's economic mobility package basedoff @achavez's immersive-template.
+
+Published here:
+http://projects.statesman.com/news/economic-mobility/
+
+## Mobile play
+Much word done to make this mobile friendly through Bootstrap. Beyond what we've built into the story page template, the index page was specificaly optimized for mobile.
+
+## Social play
+Standard social buttons in the navigation bar.  In hindsight, we should've added some embedded Facebook posts and tweets into the project. Also story highlights.
 
 ## Photo sizes
 
