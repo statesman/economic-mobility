@@ -49,7 +49,7 @@ module.exports = function(grunt) {
     // Run our JavaScript through JSHint
     jshint: {
       js: {
-        src: ['src/js/**.js']
+        src: ['src/js/**.js'],
       }
     },
 

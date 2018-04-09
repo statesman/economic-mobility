@@ -1,5 +1,7 @@
 # economic-mobility
 
+> Updates: Updated Gatehouse Footer. Sneaker-ftping since this was an old sync project.
+
 Dan Zehr's economic mobility package basedoff @achavez's immersive-template.
 
 Published here:
